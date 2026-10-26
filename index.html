@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SIHI · Sistem Informasi Higiene Industri — UPN "Veteran" Jakarta</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="brand">
+    <span class="brand-mark">SIHI</span>
+    <div>
+      <h1>Sistem Informasi Higiene Industri</h1>
+      <p class="sub">UPN "Veteran" Jakarta · Fakultas Ilmu Kesehatan · Dok. REG-HIMU-02 · Rev.1 · diperbarui 27 Oktober 2026</p>
+    </div>
+  </div>
+  <p class="head-note">Data register program higiene industri. Berjalan lokal tanpa server; siap dipublikasikan ke GitHub &amp; Vercel.</p>
+</header>
+
+<nav class="tabs" id="tabs" aria-label="Modul register"></nav>
+
+<main class="wrap">
+  <section class="bar">
+    <input type="search" id="q" placeholder="Cari di tabel aktif (area, parameter, PIC, status)…" autocomplete="off">
+    <label class="filter"><span>Status</span>
+      <select id="status"><option value="">Semua</option></select>
+    </label>
+    <button id="csv" type="button">Unduh CSV</button>
+    <span id="count" class="count"></span>
+  </section>
+
+  <section id="view" aria-live="polite"></section>
+</main>
+
+<footer class="site-foot">
+  <p>Dibuat oleh: <strong>Agung Raharjo, SKM., MKM.</strong> (Pakar Higiene Industri) ·
+     Direview oleh: <strong>Dr. Agus Joko Susanto, SKM, MKKK</strong> (Pengawas K3) ·
+     Disetujui oleh: <strong>Dr. Sri Yani, SKM., M.Sc.</strong> (Penanggung Jawab)</p>
+  <p>Bukti pendukung: 01_HIRADC · 02_Register Peraturan · 03_Register SIHI · 04_Register B3/APD · LAP-HIMU-01/02 · PROG-K3-2026</p>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

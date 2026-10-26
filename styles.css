@@ -1,0 +1,124 @@
+/* SIHI — restrained institutional styling: no gradients, no emoji, data first. */
+:root {
+  --ink: #1F3864;        /* navy institutional */
+  --ink-soft: #44507A;
+  --paper: #F7F7F4;
+  --card: #FFFFFF;
+  --line: #D8DCE4;
+  --accent: #A9D40A;     /* UPN lime, used sparingly */
+  --ok: #2E7D32;
+  --warn: #B26A00;
+  --bad: #C62828;
+  --muted: #6B7280;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: #17203A;
+  font: 14px/1.45 "Segoe UI", Arial, "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* header */
+.site-head {
+  background: var(--ink);
+  color: #fff;
+  padding: 18px 28px 16px;
+  border-bottom: 4px solid var(--accent);
+}
+.brand { display: flex; align-items: center; gap: 14px; }
+.brand-mark {
+  font-size: 26px; font-weight: 700; letter-spacing: 1px;
+  border: 2px solid #fff; padding: 6px 10px;
+}
+.brand h1 { margin: 0; font-size: 18px; font-weight: 600; letter-spacing: .2px; }
+.brand .sub { margin: 2px 0 0; font-size: 12.5px; color: #D6DCEC; }
+.head-note {
+  margin: 10px 0 0; font-size: 12px; color: #C9D1E4; max-width: 90ch;
+}
+
+/* tabs */
+.tabs {
+  display: flex; flex-wrap: wrap; gap: 2px;
+  background: #EDF0F6; border-bottom: 1px solid var(--line);
+  padding: 0 20px;
+}
+.tabs button {
+  appearance: none; border: 0; background: transparent; cursor: pointer;
+  font: inherit; font-size: 13.5px; color: var(--ink-soft);
+  padding: 10px 14px 8px; border-bottom: 3px solid transparent;
+}
+.tabs button:hover { color: var(--ink); }
+.tabs button.active {
+  color: var(--ink); font-weight: 600; background: var(--card);
+  border-bottom-color: var(--accent);
+}
+
+/* layout */
+.wrap { padding: 16px 28px 8px; max-width: 1500px; margin: 0 auto; }
+.bar { display: flex; align-items: center; gap: 12px; margin: 4px 0 12px; flex-wrap: wrap; }
+.bar input[type="search"] {
+  flex: 1 1 320px; max-width: 480px;
+  padding: 8px 10px; font: inherit; font-size: 13.5px;
+  border: 1px solid var(--line); background: var(--card);
+}
+.bar input[type="search"]:focus { outline: 2px solid var(--ink); outline-offset: -1px; }
+.filter { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); }
+.filter select { padding: 7px 8px; font: inherit; font-size: 13px; border: 1px solid var(--line); background: var(--card); }
+.bar button {
+  padding: 8px 14px; font: inherit; font-size: 13px; cursor: pointer;
+  border: 1px solid var(--ink); background: var(--card); color: var(--ink);
+}
+.bar button:hover { background: var(--ink); color: #fff; }
+.count { font-size: 12.5px; color: var(--muted); margin-left: auto; }
+
+/* tables */
+table { width: 100%; border-collapse: collapse; background: var(--card); }
+caption {
+  text-align: left; font-size: 13px; font-weight: 600; color: var(--ink);
+  padding: 0 0 6px;
+}
+th, td { border: 1px solid var(--line); padding: 7px 9px; vertical-align: top; text-align: left; }
+thead th {
+  background: var(--ink); color: #fff; font-weight: 600; font-size: 12.5px;
+  border-color: #33518C; white-space: nowrap;
+}
+tbody tr:nth-child(even) td { background: #F4F6FA; }
+tbody td { font-size: 13px; }
+td.num { text-align: right; font-variant-numeric: tabular-nums; }
+td.center { text-align: center; }
+tr.total td { font-weight: 700; background: #EDF0F6; }
+
+/* status chips */
+.chip {
+  display: inline-block; padding: 1px 8px; border-radius: 2px;
+  font-size: 12px; font-weight: 600; white-space: nowrap;
+}
+.chip.ok   { color: var(--ok);   background: #E4F1E4; border: 1px solid #BFDCBF; }
+.chip.warn { color: var(--warn); background: #FBF3E2; border: 1px solid #EAD7AC; }
+.chip.bad  { color: var(--bad);  background: #FBE7E7; border: 1px solid #EFB9B9; }
+
+/* summary blocks */
+.summary-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+@media (max-width: 1000px) { .summary-grid { grid-template-columns: 1fr; } }
+.note {
+  font-size: 12.5px; color: var(--muted); margin: 10px 0 0;
+}
+.kpi-strip { display: flex; gap: 26px; flex-wrap: wrap; margin: 2px 0 14px; }
+.kpi { border-left: 3px solid var(--accent); padding: 2px 0 2px 12px; }
+.kpi b { display: block; font-size: 20px; color: var(--ink); font-variant-numeric: tabular-nums; }
+.kpi span { font-size: 12px; color: var(--muted); }
+
+/* footer */
+.site-foot {
+  margin-top: 22px; padding: 14px 28px 18px;
+  border-top: 1px solid var(--line); background: var(--card);
+  font-size: 12.5px; color: var(--muted);
+}
+.site-foot p { margin: 3px 0; }
+
+@media print {
+  .tabs, .bar { display: none; }
+  body { background: #fff; }
+}
