@@ -68,24 +68,6 @@ const SIHI_DATA = {
     ["Register B3", "Kalibrasi pompa high volume kadaluarsa", "Moderate", "Kalibrasi ulang ke lembaga terakreditasi", "Laboratorium", "01 Nov 2026", "Dalam proses"]
   ],
 
-  mcu: [
-    ["Laboratorium", 12, 10, "2 (peningkatan tekanan darah)", "Pemantauan & rujukan klinis; evaluasi beban kerja"],
-    ["Workshop / Bengkel", 9, 7, "2 (penurunan fungsi pendengaran ringan)", "Penguatan penggunaan APD & pengendalian kebisingan"],
-    ["Fasilitas & Gedung", 8, 8, "—", "Lanjutkan pengendalian yang ada"],
-    ["Kantor / Administrasi", 24, 20, "4 (keluhan muskuloskeletal)", "Perbaikan ergonomi workstation & micro-break"],
-    ["Dosen & Tendik Lain", 30, 28, "2 (peningkatan kolesterol)", "Program kesehatan & gaya hidup"]
-  ],
-
-  promosi: [
-    ["Sosialisasi Kode Etik Profesi HI", "Praktisi & calon praktisi HI", "Pertemuan & dokumen", "Semester I", "Tim HI"],
-    ["Pelatihan penggunaan APD yang benar", "Teknisi laboratorium & workshop", "Demonstrasi & simulasi", "Semester I", "Tim K3"],
-    ["Kampanye ergonomi workstation & peregangan", "Staf administrasi & dosen", "Poster, video, micro-break", "Semester I & II", "Tim K3"],
-    ["Penyuluhan penanganan B3 & tumpahan", "Petugas laboratorium", "Simulasi & leaflet", "Semester II", "Laboratorium"],
-    ["Simulasi tanggap darurat & evakuasi", "Seluruh warga kampus", "Drill evakuasi & APAR", "Semester II", "K3 & Fasilitas"],
-    ["Pemeriksaan kesehatan & konseling", "Pegawai berisiko (lab, workshop, fasilitas)", "MCU & konseling", "Semester II", "Unit Kesehatan"],
-    ["Publikasi bulletin K3 & keselamatan", "Seluruh warga kampus", "Buletin, media sosial, website", "Berkelanjutan", "Tim K3"]
-  ],
-
   peraturan: [
     ["UU No. 1/1970", "Pasal 3 (syarat K3); Pasal 7 (penyediaan APD)", "APD praktikum & pengendalian sumber bahaya gedung", "Tercapai", "Register APD (04); HIRADC"],
     ["PP No. 50/2012", "Pasal 5 (kewajiban SMK3); Pasal 8–10", "Manual SMK3, HIRADC, audit internal & review", "Berjalan", "HIRADC; PROG-K3-2026"],
